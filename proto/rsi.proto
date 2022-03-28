@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package rsi;
+
+service RsiService {
+    rpc Rsi(RsiRequest) returns (RsiResponse) {}
+}
+
+message Rsi {
+    repeated float closes = 1;
+}
+
+message RsiRequest {
+    Rsi closes = 1;
+}
+
+message RsiResponse {
+    string result = 1;
+}

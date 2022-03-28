@@ -1,0 +1,2 @@
+  && protoc-gen-grpc-ts --ts_out=./server --proto_path= proto/*.proto"
+    
